@@ -1,5 +1,5 @@
 import axios from "axios";
-const api = axios.create({ baseURL: process.env.URL })
+const api = axios.create({ baseURL: "https://crud-api-wywq.onrender.com" })
 
 
 export async function getPosts() {

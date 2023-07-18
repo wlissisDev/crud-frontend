@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 export function Post() {
     return (
         <div className="w-auto md:w-[90%] m-4 p-4 rounded-sm bg-white shadow">
@@ -11,9 +12,9 @@ export function Post() {
                 <span className="m-4 cursor-pointer text-2xl text-red-500">
                     <ion-icon name="trash-outline"></ion-icon>
                 </span>
-                <span className="m-4 cursor-pointer text-2xl text-green-700">
+                <Link to="update" className="m-4 cursor-pointer text-2xl text-green-700">
                     <ion-icon name="create-outline"></ion-icon>
-                </span>
+                </Link>
             </div>
         </div>
     )

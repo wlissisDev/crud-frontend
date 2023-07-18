@@ -7,14 +7,14 @@ export function Navbar() {
             <div className="flex justify-between items-center">
                 <span className="text-2xl font-semibold">CRUD</span>
                 <span className="text-3xl cursor-pointer md:hidden mx-2">
-                    <ion-icon name={`${menu == false ? "close" : "menu"}`} onClick={() => setMenu(!menu)}></ion-icon>
+                    <ion-icon name={`${menu == false ? "menu" : "close"}`} onClick={() => setMenu(!menu)}></ion-icon>
                 </span>
             </div>
             <div className={`flex flex-col md:flex-row md:items-center z-[1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto
             md:py-0 py-4 md:pl-0 pl-4 md:opacity-100  transition-all ease duration-500  
-            ${menu == false ? "opacity-100 top-[70px]" : "opacity-0 top-[-400px]"}`}>
+            ${menu == false ? "opacity-0 top-[-400px]" : "opacity-100 top-[70px]"}`}>
                 <Link className="mx-4 font-medium text-xl m-4 text-gray-600" to="/">Home</Link>
-                <Link className="mx-4 font-medium text-xl m-4 text-gray-600" to="create">Create</Link>
+                <Link className="mx-4 font-medium text-xl m-4 text-gray-600" to="/create">Create</Link>
             </div>
         </nav>
     )

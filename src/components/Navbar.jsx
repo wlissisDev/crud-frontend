@@ -5,7 +5,7 @@ export function Navbar() {
     return (
         <nav className="p-4 md:px-6 md:py-2 bg-white shadow md:flex md:items-center md:justify-between  relative">
             <div className="flex justify-between items-center">
-                <span className="text-2xl font-semibold">CRUD</span>
+                <span className="text-2xl font-extrabold text-zinc-600 border-4 px-2 border-zinc-500">CRUD</span>
                 <span className="text-3xl cursor-pointer md:hidden mx-2">
                     <ion-icon name={`${menu == false ? "menu" : "close"}`} onClick={() => setMenu(!menu)}></ion-icon>
                 </span>
@@ -17,5 +17,6 @@ export function Navbar() {
                 <Link className="mx-4 font-medium text-xl m-4 text-gray-600" to="/create">Create</Link>
             </div>
         </nav>
+
     )
 }

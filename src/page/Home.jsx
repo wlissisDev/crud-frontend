@@ -20,6 +20,7 @@ export function Home() {
                         id={item.id}
                         title={item.title}
                         content={item.content}
+                        setPosts={setPosts}
                     />)
                 }
             </div>

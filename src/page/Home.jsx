@@ -4,7 +4,7 @@ import { Post } from '../components/Post'
 import { getPosts } from '../utils';
 
 export function Home() {
-    const [posts, setPosts] = useState();
+    const [posts, setPosts] = useState([]);
 
     useEffect(() => {
         getPosts().then(result => setPosts(result));

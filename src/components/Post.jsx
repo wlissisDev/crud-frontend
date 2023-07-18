@@ -12,7 +12,7 @@ export function Post() {
                 <span className="m-4 cursor-pointer text-2xl text-red-500">
                     <ion-icon name="trash-outline"></ion-icon>
                 </span>
-                <Link to="update" className="m-4 cursor-pointer text-2xl text-green-700">
+                <Link to={`update/${"id"}`} className="m-4 cursor-pointer text-2xl text-green-700">
                     <ion-icon name="create-outline"></ion-icon>
                 </Link>
             </div>

@@ -4,6 +4,7 @@ export function Create() {
     return (
         <div className='w-screen'>
             <Navbar />
+            <h1 className="text-center text-xl my-6 text-gray-500 font-bold uppercase">Create Post</h1>
             <form className='p-4 flex flex-col items-center justify-center w-auto'>
                 <div className='flex flex-col mb-4 w-full md:w-[50%]'>
                     <label className='text-gray-500 font-semibold'>Title</label>
